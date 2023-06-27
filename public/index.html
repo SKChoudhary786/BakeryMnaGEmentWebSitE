@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="image/slice.png" type="image/png">
+    <title>SliceNBites</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+<div class="black" style="background-color:rgba(0, 0, 0, 0.304) ;">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <video autoplay muted loop id="bgvideo">
+      <source src="Media/Untitled.mp4" />
+    </video>
+    <nav class="navbar " style="background-color: rgb(27, 27, 27); border: 0.1px solid #FFDA87; border-radius: 0% 0% 20% 20%; padding: 20px;" >
+      <div class="container-fluid">
+          <a class="navbar-brand " style="color: #FFDA87; font-size: 30px; margin: 8px;">|l sLICE N BITEs l|</a>
+          <form class="d-flex" role="search" style="margin:auto ; margin-right: 420px;">
+              <input style="border-radius: 130px; background-color: black; color: #FFDA87; padding: 1px 60px 1px 60px; border: 0.5px solid #FFDA87; " id="sbar" class="form-control me-2 d-flex" type="search" placeholder="Search Cakes.." aria-label="Search">
+              <button onclick="searchtime()" id="btnsearch" class="btn btn-outline-success d-flex" style="border: 0.5px solid #FFDA87; color: #FFDA87;"type="search">Search</button>
+              
+          </form>
+          <button  onclick="openForm()" id="memlogo" class="btn btn-outline-success" style="border: transparent;"><img style="width: 90px;" src="Media/kindpng_4023396.png" alt=""></button>
+      </div>
+  </nav>
+  <div class="form-popup" id="myForm">
+    <!-- <form action="/action_page.php" method="get" class="form-container"> -->
+    <form action="#" method="get" class="form-container">
+      <button style="background: transparent;" type="button" class="cancel" onclick="closeForm()"><img src="image/cancel.png" alt=""></button>
+      <h1 class="joinus" >Join  Us..</h1>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="number"><b>Phone</b></label><br>
+      <input type="number"placeholder="Enter phone number" name="phone" required><br>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button onclick="alerting()" style="background: transparent; width: 180px; margin: auto; margin-left: 55px;" type="submit" ><img style="background: transparent;" src="image/membtn.png" alt="image not found"></button>
+    </form>
+  </div>
+    <div class="card-group"  >
+      <div class="card"  style=" border-radius: 35%; background-color: rgba(0, 0, 0, 0.400); color: azure; margin: auto; margin-top: 50px; margin-left: 300px;">
+        <video style="border-radius: 35%; " class="card-img-top" autoplay loop muted src="Media/pexels-los-muertos-crew-8477935 (1).mp4"></video>
+        <div class="card-body" >
+          <h5 class="card-title">CUPCAKES</h5>
+          <p class="card-text">Gonna Be A While? Grab A Cupcake.  :) :) :) :) :)</p>
+          <!-- <p class="card-text"><small class="text-muted"></small></p> -->
+          <a href="cupcakes.html" target="_blank"> <button id="menubtn" >MENU</button></a>
+        </div>
+      </div>
+      <div class="card" style="border-radius: 35%; background-color: rgba(0, 0, 0, 0.400); color: azure; margin: auto; margin-top: 50px;">
+        <video style="border-radius: 35%; "class="card-img-top" autoplay loop muted src="Media/jarcakes.mp4"></video>
+
+        <div class="card-body">
+          <h5 class="card-title">JARCAKES</h5>
+          <p class="card-text">Get the cake that everyone is talking about. :) :) :) :) :)</p>
+          <!-- <p class="card-text"><small class="text-muted"></small></p> -->
+          <a href="jarcakes.html" target="_blank"> <button id="menubtn" >MENU</button></a>
+
+        </div>
+      </div>
+      <div class="card"  style="border-radius: 35%; background-color: rgba(0, 0, 0, 0.400); color: azure; margin: auto; margin-top: 50px; margin-right: 300px;">
+        <video style="border-radius: 35%; "class="card-img-top" autoplay loop muted src="Media/video (2).mp4"></video>
+
+        <div class="card-body">
+          <h5 class="card-title">CAKES</h5>
+          <p class="card-text">Unforgettable Sweetness You'll Keep Craving For. :) :) :) :) :)</p>
+          <!-- <p class="card-text"><small class="text-muted"></small></p> -->
+         <a href="cakes.html" target="_blank"> <button id="menubtn" >MENU</button></a>
+
+        </div>
+      </div>
+    </div>
+<div class="cardalign" style="margin: auto; margin-left: 30%;">
+<div class="card2" style="display: inline-block;">
+  <video style="border-radius: 35%; "class="card-img-top" autoplay loop muted src="Media/chocolate.mp4"></video>
+  <div class="container">
+    <h4>CHOCOLATES</h4><br> 
+    <p>A Rich Goodness in Every bite.   :) :) :) :) :)</p> 
+    <a href="chocolates.html" target="_blank"> <button id="menubtn" >MENU</button></a>
+  </div>
+</div>
+<div class="card2" style="display: inline-block;">
+<video style="border-radius: 35%; "class="card-img-top" autoplay loop muted src="Media/bday.mp4"></video>
+  <div class="container">
+    <h4>CELEBRATION SPECIALS</h4> 
+    <p>Making Every Celebration Sweeter..   :) :) :) :) :)</p> 
+    <a href="celebration.html" target="_blank"> <button id="menubtn" >MENU</button></a>
+  </div>
+</div>
+</div>
+
+    <!-- footer section starts  -->
+<footer>
+<section class="footer">
+
+  <div class="share">
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=917339510030&text&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a>
+      <a target="_blank" href="https://instagram.com/a_fresh_tart_?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
+      <a target="_blank" href="https://twitter.com/slice_n_bites" class="fab fa-twitter"></a>
+      <a target="_blank" href="https://youtube.com/c/Yummytownnency" class="fab fa-youtube"></a>
+      <a target="_blank" href="https://pin.it/3KdLPgB" class="fab fa-pinterest"></a>
+  </div>
+
+  <div class="credit"> A fresh start by <span><a target="_blank" href="https://instagram.com/a_fresh_tart_?igshid=YmMyMTA2M2Y=">Nidhi Sidhapura</a></span> | all rights reserved </div>
+
+</section>
+</footer>
+</div>
+<!-- footer section ends -->
+<script src="JS/view.js"></script>
+  </body>
+</html>
